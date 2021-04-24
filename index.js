@@ -1,12 +1,11 @@
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-  const name = process.env.NAME || 'World';
-  res.send(`Hello ${name}!`);
+"use strict";
+exports.__esModule = true;
+var express_1 = require("express");
+var app = express_1["default"]();
+var PORT = 8080;
+app.get('/', function (req, res) {
+    res.send('Cloud Runのテストしてみたよ');
 });
-
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-  console.log(`helloworld: listening on port ${port}`);
+app.listen(PORT, function () {
+    console.log("Running http://localhost:8080");
 });

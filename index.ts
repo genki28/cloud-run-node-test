@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`🚀Running http://localhost:8080`)
+    console.log(`Running http://localhost:8080`)
 })
